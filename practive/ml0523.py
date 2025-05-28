@@ -48,10 +48,10 @@ for _ in range(epochs):
     b -= learning_late * gradient_b
 
     # Display the loss value of the current epoch
-    if epochs % 1000 == 0:
-        loss = -y_train*np.log(prediction + 1e-15) - (1 - y_train)*np.log(1-prediction + 1e-15)
+    # if epochs % 1000 == 0:
+    #     loss = -y_train*np.log(prediction + 1e-15) - (1 - y_train)*np.log(1-prediction + 1e-15)
 
-        print(loss.mean())
+        # print(loss.mean())
 
 # w -> 30개의 b 값
 np.set_printoptions(suppress=True, precision=15)
